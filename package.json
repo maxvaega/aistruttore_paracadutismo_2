@@ -9,6 +9,7 @@
     "dependencies": {
         "@vercel/node": "^2.14.0",
         "axios": "^0.27.2",
-        "raw-body": "^2.5.2"
+        "raw-body": "^2.5.2",
+        "vercel": "^37.6.2"
     }
 }
