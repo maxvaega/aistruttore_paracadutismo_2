@@ -69,7 +69,7 @@ async function processMessage(senderId, messageText) {
 
     return cleanedText;
   } catch (error) {
-    console.error('Errore nel recupero della risposta dell'assistente:', error);
+    console.error('Errore nel recupero della risposta dell\'assistente:', error);
     throw error;
   }
 }
@@ -85,7 +85,7 @@ async function getAssistantResponse(conversation) {
     const assistantMessage = response.data.choices[0].message.content;
     return assistantMessage;
   } catch (error) {
-    console.error('Errore nell'interazione con l'API di OpenAI:', error.response ? error.response.data : error);
+    console.error('Errore nell\'interazione con l\'API di OpenAI:', error.response ? error.response.data : error);
     throw error;
   }
 }
@@ -104,7 +104,7 @@ async function sendMessage(senderId, messageText) {
     await axios.post(url, payload);
     console.log('Messaggio inviato a:', senderId);
   } catch (error) {
-    console.error('Errore nell'invio del messaggio:', error.response ? error.response.data : error);
+    console.error('Errore nell\'invio del messaggio:', error.response ? error.response.data : error);
     throw error;
   }
 }
